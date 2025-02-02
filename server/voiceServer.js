@@ -9,7 +9,10 @@ const app = express();
 
 // Ensure CORS is properly configured
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: [
+        'http://localhost:5173',
+        'https://therapeutic-assistant.vercel.app'  // Add your Vercel URL
+    ],
     methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization']

@@ -138,7 +138,7 @@ function AICompanion() {
                 }
             }
 
-            const response = await fetch('http://localhost:8081/voice-chat', {
+            const response = await fetch(`${import.meta.env.VITE_VOICE_API_URL}/voice-chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 credentials: 'include',
