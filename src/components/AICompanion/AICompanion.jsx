@@ -128,17 +128,8 @@ function AICompanion() {
 
         try {
             setIsProcessing(true);
-            // Stop listening while processing
-            if (recognitionRef.current) {
-                try {
-                    recognitionRef.current.stop();
-                    setIsListening(false);
-                } catch (error) {
-                    console.warn('Error stopping recognition:', error);
-                }
-            }
-
-            const response = await fetch(`${import.meta.env.VITE_VOICE_API_URL}/voice-chat`, {
+            
+            const response = await fetch('https://therapeutic-assistant-backend.onrender.com/voice-chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 credentials: 'include',
@@ -162,17 +153,6 @@ function AICompanion() {
         } catch (error) {
             console.error('Processing error:', error);
             setError(error.message);
-            // Restart listening if there's an error
-            if (recognitionRef.current) {
-                setTimeout(() => {
-                    try {
-                        recognitionRef.current.start();
-                        setIsListening(true);
-                    } catch (error) {
-                        console.warn('Error restarting recognition:', error);
-                    }
-                }, 1000);
-            }
         } finally {
             setIsProcessing(false);
         }
