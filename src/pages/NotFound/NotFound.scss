@@ -1,0 +1,63 @@
+@use "../../styles/variables" as *;
+
+.not-found {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2rem;
+
+  &__content {
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  &__icon {
+    color: $accent-orange;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-family: $font-secondary;
+    font-size: 6rem;
+    color: $text-dark;
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+    color: $text-medium;
+    margin: 1rem 0 2rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: $gradient-accent;
+    color: $warm-white;
+    text-decoration: none;
+    border-radius: $radius-sm;
+    font-family: $font-primary;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

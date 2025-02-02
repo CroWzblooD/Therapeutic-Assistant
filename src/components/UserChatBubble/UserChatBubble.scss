@@ -1,0 +1,24 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+.user-chat-bubble {
+  margin-bottom: 20px;
+  margin-left: auto;
+  max-width: 80%;
+  
+  &__message {
+    background: $gradient-accent;
+    padding: 15px 20px;
+    border-radius: $radius-md;
+    color: $warm-white;
+    font-family: $font-primary;
+    line-height: 1.5;
+    box-shadow: $shadow-soft;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $secondary-text;
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "role": "USER",
+    "message": "Feeling so happy today, I think this is the first time I did well on a hackathon. It was really fun staying up all night to finish it.",
+    "prediction": "Happy",
+    "confidence": 0.999621,
+    "emotion_conf_stat": {
+      "Angry": [3.295056e-5],
+      "Calm": [3.2266587e-5],
+      "Fear": [5.1881154e-5],
+      "Happy": [0.999621],
+      "Insightful": [0.0002036906],
+      "Sad": [5.788493e-5],
+      "Worry": [3.624818e-7]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "That's great that you enjoyed your experience with the hackathon! Hackathons provide a great opportunity to test yourself and see the results of your work, and it's definitely a rewarding feeling. \n\nWhat do you think was the main reason you did so well this time? And will you continue participating in these kind of competitions?"
+  },
+  {
+    "role": "USER",
+    "message": "\nI think it was a nice atmosphere, we had a good idea from the get go, and I was and still am passionate about building ML models.",
+    "prediction": "Insightful",
+    "confidence": 0.67777497,
+    "emotion_conf_stat": {
+      "Angry": [0.014929766],
+      "Calm": [0.11991205],
+      "Fear": [0.11292772],
+      "Happy": [0.07086017],
+      "Insightful": [0.67777497],
+      "Sad": [0.00358777],
+      "Worry": [7.542083e-6]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "That's great, it seems like you had a good idea, put in the time and work, and reaped the rewards. \n\nAlso, a conducive atmosphere for innovation and an idea that you're passionate about, are also key in achieving success. Do you plan to participate in other competitions too?"
+  },
+  {
+    "role": "USER",
+    "message": "\nYeah definitely, my teammates were great and very supportive. I was very calm throughout the event.",
+    "prediction": "Calm",
+    "confidence": 0.9862795,
+    "emotion_conf_stat": {
+      "Angry": [0.0008666649],
+      "Calm": [0.9862795],
+      "Fear": [0.00794431],
+      "Happy": [0.0018141143],
+      "Insightful": [0.0030667132],
+      "Sad": [2.0555088e-5],
+      "Worry": [8.142794e-6]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "It seems that you've built a good team dynamic, which is very important in these scenarios. Calmness is also very important in these situations, as panic never helps anyone. \n\nDo you think you'll do anything differently in future competitions? Or will you stick to the same approach that led to your success?"
+  }
+]

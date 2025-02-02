@@ -1,0 +1,45 @@
+@use '../../styles/variables' as *;
+
+.bot-chat-bubble {
+  margin-bottom: 20px;
+  max-width: 80%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  &__avatar {
+    width: 35px;
+    height: 35px;
+    background: $gradient-accent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $warm-white;
+    }
+  }
+
+  &__name {
+    font-family: $font-primary;
+    font-size: 0.9rem;
+    color: $text-medium;
+  }
+
+  &__message {
+    background: $primary-beige;
+    padding: 15px 20px;
+    border-radius: $radius-md;
+    font-family: $font-primary;
+    color: $text-dark;
+    line-height: 1.5;
+    box-shadow: $shadow-soft;
+  }
+}

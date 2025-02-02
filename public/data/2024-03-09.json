@@ -1,0 +1,59 @@
+[
+  {
+    "role": "USER",
+    "message": "A driver unfairly cut me off on the road, I was frustrated that he did not seem apologetic",
+    "prediction": "Angry",
+    "confidence": 0.99999785,
+    "emotion_conf_stat": {
+      "Angry": [0.99999785],
+      "Calm": [3.8896053e-7],
+      "Fear": [6.8273195e-8],
+      "Happy": [1.1248247e-7],
+      "Insightful": [1.6037388e-8],
+      "Sad": [2.7979453e-7],
+      "Worry": [1.2933131e-6]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "It's understandable that you would feel frustrated after being cut off by another driver, especially when they don't seem to show any apologetic behavior. This situation can lead to a range of emotions, including anger and stress. \n\nIn these situations, it might be helpful to take a moment to acknowledge your feelings and then shift your focus onto something else you can control, like your own responses to these situations. \n\nHow do you normally respond to these situations? Do you think there is anything you could do or any technique you could use to make it better?"
+  },
+  {
+    "role": "USER",
+    "message": "I would have let him pass, but he almost crashed into me!",
+    "prediction": "Angry",
+    "confidence": 0.92232394,
+    "emotion_conf_stat": {
+      "Angry": [0.92232394],
+      "Calm": [6.1425046e-5],
+      "Fear": [0.07688193],
+      "Happy": [7.6595614e-5],
+      "Insightful": [2.2804668e-6],
+      "Sad": [1.1754893e-6],
+      "Worry": [0.00065263116]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "It sounds like you felt this situation warranted a particular urgency. Seeing someone drive dangerously, and potentially putting others at risk, can be very alarming. \n\nIn these moments, it's important to prioritize your own safety and the safety of others on the road. It might be helpful to practice some deep breathing techniques to help relax your body and mind. \n\nIf this situation has sparked any further anxiety or distress, please reach out to your friends or family to express your feelings and process the event."
+  },
+  {
+    "role": "USER",
+    "message": "I just can't believe that a driver is this rude irresponsible on the road",
+    "prediction": "Angry",
+    "confidence": 0.9999904,
+    "emotion_conf_stat": {
+      "Angry": [0.9999904],
+      "Calm": [1.2587063e-7],
+      "Fear": [1.2592542e-6],
+      "Happy": [1.4229153e-7],
+      "Insightful": [2.8501786e-6],
+      "Sad": [5.3391563e-8],
+      "Worry": [5.1841016e-6]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "It's important to remember that everyone makes mistakes and that one person's actions do not necessarily reflect their entire character. Someone who is generally kind and responsible may occasionally make an irresponsible decision, like the driver you encountered. \n\nAdditionally, it's possible that this driver may have been distracted or unaware of their surroundings which led to their rude behavior. \n\nTry to give others the benefit of the doubt whenever possible, and consider that everyone is doing their best given their circumstances. \n\nHow can you apply this learning to future similar situations? Remember that everyone makes mistakes, and give others the benefit of the doubt."
+  }
+]

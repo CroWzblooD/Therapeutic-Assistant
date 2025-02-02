@@ -1,0 +1,59 @@
+[
+  {
+    "role": "USER",
+    "message": "I am extremely worried about my upcoming midterm exam next week!",
+    "prediction": "Worry",
+    "confidence": 0.9916313,
+    "emotion_conf_stat": {
+      "Angry": [1.41117e-5],
+      "Calm": [3.0610736e-5],
+      "Fear": [0.008164816],
+      "Happy": [2.7644908e-5],
+      "Insightful": [6.749165e-5],
+      "Sad": [6.400355e-5],
+      "Worry": [0.9916313]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "It's understandable to feel worried or anxious about an upcoming exam. Many people experience these feelings. You might be feeling this way for a variety of reasons, whether you care a lot about doing well, want to ensure your grade in the class, or fear not having enough time to study. \n\nHow are you preparing for the exam? Is there a lot of material to cover? Sometimes making a plan of action and breaking down the tasks can help alleviate some of these worries. But I'm curious to know, how do you tend to cope with these feelings?"
+  },
+  {
+    "role": "USER",
+    "message": "\nI am making a study guide, but I keep forgetting important topics ",
+    "prediction": "Insightful",
+    "confidence": 0.5153247,
+    "emotion_conf_stat": {
+      "Angry": [0.0011386784],
+      "Calm": [0.00061110215],
+      "Fear": [0.015027612],
+      "Happy": [0.00036546678],
+      "Insightful": [0.5153247],
+      "Sad": [0.0061371536],
+      "Worry": [0.4613953]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "It's common to feel worried about forgetting important details, especially when you want to remember them. Depending on the amount of information you need to commit to memory, it can feel overwhelming or like it is impossible to grasp it all. This is especially the case if you are trying to memorize many details rapidly, which can lead to forgetting. \n\nThis might be an opportunity to explore different memory techniques to boost your recall. Mnemonic devices and the use of visual imagery have been shown to be extremely beneficial to help recall information. Do you perhaps want to try incorporating some of these techniques as you study?"
+  },
+  {
+    "role": "USER",
+    "message": "\nI can, but I feel like I am running out of time ",
+    "prediction": "Sad",
+    "confidence": 0.90265834,
+    "emotion_conf_stat": {
+      "Angry": [0.00010465304],
+      "Calm": [0.0003140481],
+      "Fear": [0.038371243],
+      "Happy": [3.122921e-5],
+      "Insightful": [0.05220711],
+      "Sad": [0.90265834],
+      "Worry": [0.006313387]
+    }
+  },
+  {
+    "role": "CHATBOT",
+    "message": "I understand that feeling of never feeling like you have enough time to prepare, amidst all the other commitments and responsibilities you may have. It's understandable that you feel rushed, and maybe a little frustrated that you don't have more time to prepare. \n\nIt may be helpful to establish a timeline for yourself. By allocating specific time slots for each topic, and including the time needed for breaks, you may feel more in control of your preparation. Sometimes planning ahead can help with the feeling of never having enough time. \n\nBut this may also be a good opportunity to reflect on past experiences where you felt pressed for time, or your coping mechanisms for these feelings. Maybe you can reflect on what helped you overcome those feelings in the past."
+  }
+]

@@ -1,0 +1,66 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.day {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeUp 0.3s ease-out;
+
+    &__header {
+        @include card;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: $text-dark;
+
+        svg {
+            font-size: 24px;
+            color: $accent-orange;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__insights {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: $gradient-warm;
+        border-radius: $radius-sm;
+        color: $text-medium;
+        font-size: 0.9rem;
+
+        svg {
+            color: $accent-orange;
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: 24px;
+        height: calc(100vh - 200px);
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__main {
+        flex: 1;
+        min-width: 0; // Prevents flex item from overflowing
+    }
+}

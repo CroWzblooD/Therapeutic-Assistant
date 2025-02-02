@@ -1,0 +1,278 @@
+@use "../../styles/variables" as *;
+
+.ai-companion {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 400px;
+    background: $warm-white;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-medium;
+    overflow: hidden;
+    animation: slideUp 0.3s ease-out;
+    z-index: 1000;
+    padding: 20px;
+
+    &__trigger {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background: $gradient-accent;
+        border: none;
+        border-radius: $radius-lg;
+        color: $warm-white;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        box-shadow: $shadow-medium;
+        transition: all 0.3s ease;
+        z-index: 1000;
+
+        svg {
+            font-size: 24px;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba($deep-orange, 0.3);
+        }
+    }
+
+    &__header {
+        padding: 20px;
+        background: $gradient-accent;
+        color: $warm-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        svg {
+            font-size: 24px;
+            &.speaking {
+                animation: wave 1s infinite;
+            }
+        }
+    }
+
+    &__close {
+        background: none;
+        border: none;
+        color: $warm-white;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: rgba($warm-white, 0.2);
+        }
+    }
+
+    &__content {
+        padding: 20px;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__listening,
+    &__speaking {
+        text-align: center;
+        
+        svg {
+            font-size: 32px;
+            color: $accent-orange;
+            margin-bottom: 12px;
+
+            &.pulse {
+                animation: pulse 1.5s infinite;
+            }
+
+            &.wave {
+                animation: wave 1s infinite;
+            }
+        }
+
+        p {
+            color: $text-medium;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__continue {
+        text-align: center;
+        margin-top: 20px;
+
+        button {
+            background: $gradient-accent;
+            border: none;
+            border-radius: $radius-md;
+            color: $warm-white;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: $shadow-medium;
+            }
+
+            svg {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .voice-interface {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .mic-button {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: none;
+                background: #f3f4f6;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    color: #374151;
+                }
+
+                &:hover {
+                    background: #e5e7eb;
+                }
+
+                &.active {
+                    background: #ef4444;
+                    svg {
+                        color: white;
+                    }
+                }
+
+                &:disabled {
+                    opacity: 0.5;
+                    cursor: not-allowed;
+                }
+            }
+
+            .voice-select {
+                padding: 8px 12px;
+                border-radius: 8px;
+                border: 1px solid #e5e7eb;
+                background: #f9fafb;
+                font-size: 14px;
+                color: #374151;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                    border-color: #60a5fa;
+                }
+            }
+        }
+
+        .conversation-display {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+
+            .user-text, .ai-text {
+                padding: 12px;
+                border-radius: 8px;
+                background: white;
+
+                h4 {
+                    margin: 0 0 8px 0;
+                    color: #4b5563;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin: 0;
+                    color: #374151;
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+            }
+
+            .ai-text {
+                background: #f0f9ff;
+                position: relative;
+
+                .speaking-indicator {
+                    position: absolute;
+                    right: 12px;
+                    top: 12px;
+                    color: #60a5fa;
+                    animation: pulse 1s infinite;
+                }
+            }
+
+            .processing {
+                color: #6b7280;
+                font-style: italic;
+                text-align: center;
+            }
+
+            .error {
+                color: #ef4444;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes wave {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(1.5); }
+    100% { transform: scaleY(1); }
+} 

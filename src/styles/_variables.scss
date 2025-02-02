@@ -1,0 +1,52 @@
+/* colors */
+
+// accessibility checks:
+// #FDF5ED background with #5b3a29 text is AAA compliant at small sizes
+// b7e1e6 background with #322116 text is AAA compliant at small size
+// #bdb6ab background with #322116 text is AAA compliant at small size
+//
+
+$paper: #fdf5ed;
+$paper-lines: #8a7e66;
+
+//other possibilities
+$secondary: #b2ac88; //earthy brown
+
+$primary-text: #5b3a29;
+$secondary-text: #322116;
+
+$primary-background: #b7e1e6;
+$secondary-background: #bdb6ab;
+
+$border-radius: 20px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+$primary-beige: #FFF5EC;
+$secondary-beige: #FFE4D4;
+$warm-white: #FFFFFF;
+$accent-orange: #E8A188;
+$deep-orange: #E17A54;
+$accent-pink: #FFD6D6;
+$deep-pink: #FFB5B5;
+$text-dark: #2C1810;
+$text-medium: #8B6B61;
+$text-light: #B69C94;
+
+// Gradients
+$gradient-warm: linear-gradient(135deg, $warm-white 0%, $secondary-beige 100%);
+$gradient-accent: linear-gradient(135deg, $accent-orange 0%, $deep-orange 100%);
+$gradient-pink: linear-gradient(135deg, $accent-pink 0%, $deep-pink 100%);
+
+// Shadows
+$shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+$shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+// Border Radius
+$radius-sm: 12px;
+$radius-md: 20px;
+$radius-lg: 30px;
+
+// Fonts
+$font-primary: 'DM Sans', sans-serif;
+$font-secondary: 'Playfair Display', serif;
+$font-journal: 'Noto Sans', sans-serif;

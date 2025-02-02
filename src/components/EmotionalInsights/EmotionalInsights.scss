@@ -1,0 +1,102 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.insights {
+    @include card;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        
+        svg {
+            color: $accent-orange;
+            font-size: 24px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        gap: 12px;
+        border-bottom: 1px solid rgba($text-light, 0.1);
+        padding-bottom: 12px;
+    }
+
+    &__tab {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border: none;
+        background: none;
+        color: $text-medium;
+        font-size: 0.9rem;
+        border-radius: $radius-sm;
+        transition: all 0.2s ease;
+
+        svg {
+            font-size: 18px;
+        }
+
+        &:hover {
+            background: rgba($accent-orange, 0.1);
+        }
+
+        &.active {
+            background: $gradient-accent;
+            color: $warm-white;
+        }
+    }
+
+    &__content {
+        padding: 16px 0;
+    }
+
+    &__card {
+        background: $gradient-warm;
+        padding: 20px;
+        border-radius: $radius-sm;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        svg {
+            color: $accent-orange;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        p {
+            margin: 0;
+            color: $text-medium;
+            line-height: 1.6;
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        padding: 12px 24px;
+        background: none;
+        border: 1px solid $accent-orange;
+        color: $accent-orange;
+        border-radius: $radius-sm;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: $accent-orange;
+            color: $warm-white;
+        }
+    }
+} 
